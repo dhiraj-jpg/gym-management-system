@@ -3,7 +3,7 @@ import { useAuth } from '../context/AuthContext';
 import { db } from '../lib/firebase';
 import { collection, addDoc, getDocs, doc, getDoc, updateDoc, arrayUnion, deleteDoc } from 'firebase/firestore';
 import { Calendar as CalendarIcon, Clock, User, Loader2, Plus, Users, ShieldCheck, Trash2, ChevronDown, X } from 'lucide-react';
-
+ 
 export default function Classes() {
   const { user } = useAuth();
   const [classes, setClasses] = useState([]);
