@@ -17,7 +17,7 @@ export default function Login() {
     if (!email || !password) {
       setError('Please fill in all fields');
       return;
-    }
+      }
     try {
       setError('');
       setLoading(true);
