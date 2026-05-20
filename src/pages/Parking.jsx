@@ -4,7 +4,7 @@ import { db } from '../lib/firebase';
 import { collection, query, getDocs, setDoc, doc, addDoc, updateDoc, where, orderBy, getDoc } from 'firebase/firestore';
 import { Car, History, Loader2, Wand2 } from 'lucide-react';
 import { format } from 'date-fns';
-
+ 
 export default function Parking() {
   const { user } = useAuth();
   const [role, setRole] = useState('member');
