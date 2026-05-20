@@ -4,7 +4,7 @@ import { db } from '../lib/firebase';
 import { collection, addDoc, getDocs, doc, getDoc, deleteDoc } from 'firebase/firestore';
 import { Users, Clock, Loader2, Plus, Trash2, ShieldCheck, Dumbbell, ChevronDown } from 'lucide-react';
 
-export default function Trainers() {
+export default function Trainers() { 
   const { user } = useAuth();
   const [trainers, setTrainers] = useState([]);
   const [loading, setLoading] = useState(true);
